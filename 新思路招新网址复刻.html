@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+	.mainDiv {
+        float: left;
+        margin-left: 10%;
+        width: 80%;
+        margin-top: 2%;
+        height: 600px;
+        background-color: #FFEBCD;
+        border :2px solid rgb(57, 55, 55);
+		border-radius :40px 40px 40px 40px ;
+        border-width: 4px;
+	}
+
+	.mainDiv_a {
+        float: left;
+        margin-left: 10%;
+        width: 80%;
+        margin-top: 15%;
+        height: 600px;
+        background-color: #FFEBCD;
+        border :2px solid rgb(57, 55, 55);
+		border-radius :40px 40px 40px 40px ;
+        border-width: 4px;
+
+	}
+
+    .viceDiv_11 {
+        float: left;
+
+        margin-top: 5% ;
+        margin-left: 8%;
+        width: 60%;
+        height: 80%;  
+
+    }
+
+    .viceDiv_21 {
+        float: left;
+
+        margin-top: 5% ;
+        margin-left: 2.5%;
+        width: 25%;
+        height: 80%;  
+
+    }
+
+    .mainDiv1 {
+        float: left;
+        margin-left: 10%;
+        width: 80%;
+        margin-top: 2%;
+        height: 800px;
+        background-color: #FFEBCD;
+        border :2px solid rgb(57, 55, 55);
+		border-radius :40px 40px 40px 40px ;
+        border-width: 4px;
+    }
+
+	.mainDiv2 {
+        float: left;
+        margin-left: 0%;
+        width: 100%;
+        margin-top: 6%;
+        height: 1282px;
+    }
+
+    .viceDiv_1,.viceDiv_2 {
+        float: left;
+        background-color: #7FFFD4;
+        margin-top: 0.01% ;
+        margin-left: 5%;
+        width: 43.9%;
+        height: 20%;  
+        border :2px solid rgb(57, 55, 55);
+		border-radius :40px 40px 40px 40px ;
+        border-width: 4px;
+    }
+
+    #box1 {
+        background: url('./images/background_Homepage.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-attachment: scroll;
+		width: 100%;
+		height: 100%;
+    }
+
+    #box2 {
+        background-image: url('./images/decoration_Transition.png');
+        height: 582px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-attachment: scroll;
+    }
+
+    #box3 {
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-attachment: scroll;
+        background-image: url('./images/background_QA.png');
+        height: 1000px;
+    }
+
+    #dec1 {
+        background-image: url('./images/decoration_Decoration.png');
+        position: absolute;
+        z-index: 999;
+        transform: scale(0.5);
+    }
+
+    .mainDiv3 {
+        float: left;
+        margin-left: 10%;
+        width: 80%;
+        margin-top: 4%;
+        height: 700px;
+
+        border :2px solid rgb(57, 55, 55);
+		border-radius :40px 40px 40px 40px ;
+        border-width: 4px;
+    }
+
+	.A {
+		float: left;
+        margin-left: 0%;
+        width: 98%;
+        margin-top: 2%;
+        height: 850px;
+	}
+
+	.B {
+		float: left;
+        margin-left: 0.5%;
+        width: 99%;
+        margin-top:-0.5%;
+        height: 750px;
+		position: absolute;
+	}
+
+	.C1 {
+		float: left;
+        width: 100%;
+        height: 20%;
+		margin-left: -0.4%;
+		margin-top: 0%;
+
+		position: absolute;
+	}
+
+	.C2 {
+		float: left;
+        width: 100%;
+        height: 71%;
+		margin-left: -0.4%;
+		margin-top: 9.45%;
+
+		position: absolute;
+		z-index: 999;
+	}
+
+	.C3 {
+		float: left;
+        width: 100%;
+        height: 20%;
+		margin-left: -0.4%;
+		margin-top: 41.5%;
+
+		position: absolute;
+	}
+
+	.D1 {
+		margin-top: -0.2%;
+		margin-left: -0.2%;
+		width: 33.3%;
+		height: 100%;
+
+		position: absolute;
+	}
+
+	.D2 {
+		margin-left: 33.42%;
+		margin-top: -0.2%;
+		width: 33.3%;
+		height: 100%;
+
+		position: absolute;
+	}
+
+	.D3 {
+		margin-left: 62%;
+		margin-top: -0.2%;
+		width: 33.3%;
+		height: 100%;
+
+		position: absolute;
+	}
+
+	.D21 {
+		margin-left: 5%;
+		margin-top: -7%;
+		width: 90%;
+		height: 770px;
+        border :2px solid rgb(57, 55, 55);
+        border-width: 15px;
+		border-radius :40px 40px 40px 40px ;
+		position: absolute;
+		z-index: 100;
+	}
+
+	.E1 {
+		margin-top: 13%;
+		margin-left: 10%;
+		width: 15%;
+		height: 55%;
+        border :2px solid rgb(57, 55, 55);
+        border-width: 8px;
+		border-radius :40px 40px 40px 40px ;
+		position: absolute;
+	}
+
+	.E2 {
+		margin-top: 13%;
+		margin-left: 40%;
+		width: 15%;
+		height: 60%;
+        border :2px solid rgb(57, 55, 55);
+        border-width: 8px;
+		border-radius :40px 40px 40px 40px ;
+		position: absolute;
+	}
+
+	.E3 {
+		margin-top: 13%;
+		margin-left: 70%;
+		width: 15%;
+		height: 55%;
+        border :2px solid rgb(57, 55, 55);
+        border-width: 8px;
+		border-radius :40px 40px 40px 40px ;
+		position: absolute;
+	}
+
+	.F1 {
+		margin-top: 0%;
+		margin-left: -0.6%;
+		width: 100%;
+		height: 50%;
+
+		position: absolute;
+	}
+
+	.F2 {
+		margin-top: 93%;
+		margin-left: 0.4%;
+		width: 100%;
+		height: 50%;
+
+		position: absolute;
+	}
+
+	.F21 {
+		margin-top: 100%;
+		margin-left: 0.4%;
+		width: 100%;
+		height: 50%;
+
+		position: absolute;
+	}
+
+	.imag1 {
+		z-index: 9999;
+		width: 80%;
+		height: 80%;
+		object-fit: contain;
+	}
+
+	.mirrorRotateLevel {
+		transform: rotateY(180deg);
+	}
+
+	.mirrorRotateVertical {
+		transform: rotateX(180deg);
+	}
+
+	.I {
+        float: left;
+        margin-left: 0.5%;
+        margin-top: 8%;
+        width: 98%;
+        height: 850px;
+    }
+
+	.II {
+		float: left;
+        margin-left: 4.4%;
+        margin-top:2.5%;
+        width: 90%;
+        height: 750px;
+		position: absolute;
+        border :2px solid rgb(8, 138, 138);
+        border-width: 15px;
+		border-radius :40px 40px 40px 40px ;
+	}
+
+	.III {
+		margin-top: -5%;
+		margin-left: -2%;
+		width: 22%;
+		height: 57%;
+		position: absolute;
+	}
+
+    .IV {
+		margin-top: -2%;
+		margin-left: 85%;
+		width: 17%;
+		height: 108%;
+		position: absolute;
+	}
+
+    .V {
+		margin-top: 2%;
+		margin-left: 30%;
+		width: 40%;
+		height: 10%;
+		position: absolute;
+	}
+
+    .V1 {
+		margin-top: 5%;
+		margin-left: -3%;
+		width: 15%;
+		height: 100%;
+		position: absolute;
+	}
+
+    .V2 {
+		margin-top: -1.7%;
+		margin-left: 18%;
+		width: 55%;
+		height: 100%;
+		position: absolute;
+
+	}
+
+    .V3 {
+		margin-top: 5%;
+		margin-left: 75%;
+		width: 15%;
+		height: 100%;
+		position: absolute;
+	}
+
+    .V4 {
+		margin-top: 2%;
+		margin-left: 25%;
+		width: 40%;
+		height: 10%;
+		position: absolute;
+	}
+
+    .VI {
+		margin-top: 29%;
+		margin-left: 45%;
+		width: 40%;
+		height: 45%;
+		position: absolute;
+	}
+
+    .VII {
+		margin-top: 43%;
+		margin-left: -2%;
+		width: 10%;
+		height: 17%;
+		position: absolute;
+	}
+
+    .VIII {
+		margin-top: 10%;
+		margin-left: 20%;
+		width: 60%;
+		height: 56%;
+		position: absolute;
+	}
+
+    .IX {
+		margin-top: 37%;
+		margin-left: 23%;
+		width: 47%;
+		height: 14%;
+		position: absolute;
+	}
+
+	.buttombox1 {
+		width: 30%;
+		height: 100%;
+		border :2px solid rgb(57, 55, 55);
+        border-width: 0px;
+		border-radius: 40px;
+		margin-top:-1%;
+		margin-left: -1%;
+		position: absolute;
+	}
+
+	.buttombox2 {
+		width: 30%;
+		height: 100%;
+		border :2px solid rgb(57, 55, 55);
+        border-width: 0px;
+		border-radius: 40px;
+		margin-top: -1%;
+		margin-left: 34%;
+		position: absolute;
+	}
+
+	.buttombox3 {
+		width: 30%;
+		height: 100%;
+		border :2px solid rgb(57, 55, 55);
+        border-width: 0px;
+		border-radius: 40px;
+		margin-top: -1%;
+		margin-left: 69%;
+		position: absolute;
+	}
+
+	.buttom {
+		.button {
+    	background-color: #4CAF50;
+   		border: none;
+    	color: white;
+    	padding: 15px 32px;
+    	text-align: center;
+    	text-decoration: none;
+    	display: inline-block;
+    	font-size: 16px;
+    	margin: 4px 2px;
+    	cursor: pointer;
+}
+	}
+
+	.img {
+    	border-radius: 20px;
+    	background-image: url('./images/屏幕截图\ 2023-12-07\ 174444.png');
+	}
+
+	.M1 {
+        float: left;
+        margin-left: 28.3%;
+        margin-top: 2%;
+        width: 40%;
+        height: 10%;
+
+	}
+
+	.M2 {
+        float: left;
+        margin-left: -8%;
+        margin-top: 4%;
+        width: 10%;
+        height: 10%;
+	}	
+
+	.M3 {
+        float: left;
+        margin-left: 28%;
+        margin-top: 0%;
+        width: 45%;
+        height: 60%;
+	}
+
+	.N1 {
+        float: left;
+        margin-left: 0.5%;
+        margin-top: 8%;
+        width: 99%;
+        height: 1800px;
+	}
+
+	.N2 {
+		float: left;
+        margin-left: 1.5%;
+        margin-top:1%;
+        width: 95%;
+        height: 1750px;
+		position: absolute;
+        border :2px solid rgb(8, 138, 138);
+        border-width: 15px;
+		border-radius :40px 40px 40px 40px;
+		background-color: aqua;
+	}
+
+
+	.footer {
+		float: left;
+		margin-top:3%;
+		width: 99%;
+  		background-color: #F1F1F1;
+  		text-align: center;
+  		padding: 10px;
+	}
+
+	.Tab {
+		float: left;
+        margin-left: 1.8%;
+        margin-top:1%;
+        width: 95%;
+        height: 80px;
+		position: absolute;
+		border :4px solid rgb(249, 147, 74,0.5);
+		opacity: 0.8;
+        border-width: 4px;
+		border-radius :20px;
+		z-index: 999;
+		position: fixed;
+	}
+
+	body {
+		background-color: rgba(250, 249, 222, 0.749,0.5)
+	}
+
+	.dao1 {
+		margin-left: 0%;
+        margin-top:-0.2%;
+		height: 100%;
+		width: 19.7%;
+		border :2px solid rgb(249, 190, 54,0.5);
+        border-width: 3px;
+		border-radius :40px;
+		position: absolute;
+	}
+	.dao2 {
+		margin-left: 19.85%;
+        margin-top:-0.2%;
+		height: 100%;
+		width: 19.7%;
+		border :2px solid rgb(249, 190, 54,0.5);
+        border-width: 3px;
+		border-radius :40px;
+		position: absolute;
+	}
+	.dao3 {
+		margin-left: 39.8%;
+        margin-top:-0.2%;
+		height: 100%;
+		width: 19.7%;
+		border :2px solid rgb(249, 190, 54,0.5);
+        border-width: 3px;
+		border-radius :40px;
+		position: absolute;
+	}
+	.dao4 {
+		margin-left: 59.8%;
+        margin-top:-0.2%;
+		height: 100%;
+		width: 19.7%;
+		border :2px solid rgb(249, 190, 54,0.5);
+        border-width: 3px;
+		border-radius :40px;
+		position: absolute;
+	}
+	.dao5 {
+		margin-left: 79.8%;
+        margin-top:-0.2%;
+		height: 100%;
+		width: 19.7%;
+		border :2px solid rgb(249, 190, 54,0.5);
+        border-width: 3px;
+		border-radius :40px;
+		position: absolute;
+	}
+
+	.tooltip {
+  		position: relative;
+	}
+
+	.tooltip span {
+  		position: absolute;
+ 		width: 200px; 
+		height: 200px;
+  		background-color: #333;
+  		color: #fff;
+  		text-align: center;
+  		border-radius: 6px;
+  		padding: 5px 0;
+  		visibility: hidden;
+  		opacity: 0;
+  		transition: opacity 0.3s;
+	}
+
+	.tooltip:hover span {
+		visibility: visible;
+  		opacity: 1;
+	}
+
+	.tooltip span::before {
+  		content: "";
+  		position: absolute;
+  		top: 50%;
+		margin-left: 2%;
+  		margin-top: -5px;
+  		border-width: 5px;
+  		border-style: solid;
+  		border-color: transparent #333 transparent transparent;
+	}
+
+	.imgA {
+  	transition: all 0.3s;
+	} 
+
+	.imgA:hover {
+ 	 transform:  scale(1.2); /* 放大1.1倍同时向上浮动10px */
+	}
+
+	.imgB {
+  	transition: all 0.3s;
+	} 
+
+	.imgB:hover {
+ 	 transform:  scale(1.1); /* 放大1.1倍同时向上浮动10px */
+	}
+
+	.mainDiv6 {
+        float: left;
+        margin-left: 34.6%;
+        width: 500px;
+        margin-top: 10%;
+        height: 300px;
+    }
+
+	.word {
+		font-size: 60px;
+	}
+
+	.container1 {
+      position: relative;
+    }
+
+    .element1 {
+      color: #333;
+      padding: 10px;
+    }
+
+    .target1 {
+
+      color: #fff;
+      padding: 10px;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .container1:hover .target1 {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .container2 {
+      position: relative;
+    }
+
+    .element2 {
+      color: #333;
+      padding: 10px;
+    }
+
+    .target2 {
+      color: #fff;
+      padding: 10px;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .container2:hover .target2 {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .container3 {
+      position: relative;
+    }
+
+    .element3 {
+      color: #333;
+      padding: 10px;
+    }
+
+    .target3 {
+      color: #fff;
+      padding: 10px;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .container3:hover .target3 {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .container4 {
+      position: relative;
+    }
+
+    .element4 {
+      color: #333;
+      padding: 10px;
+    }
+
+    .target4 {
+      color: #fff;
+      padding: 10px;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .container4:hover .target4 {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .container5 {
+      position: relative;
+    }
+
+    .element5 {
+      color: #333;
+      padding: 10px;
+    }
+
+    .target5 {
+      color: #fff;
+      padding: 10px;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .container5:hover .target5 {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .container6 {
+      position: relative;
+    }
+
+    .element6 {
+      color: #333;
+      padding: 10px;
+    }
+
+    .target6 {
+      color: #fff;
+      padding: 10px;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .container6:hover .target6 {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .container7 {
+      position: relative;
+    }
+
+    .element7 {
+      color: #333;
+      padding: 10px;
+    }
+
+    .target7 {
+      color: #fff;
+      padding: 10px;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .container7:hover .target7 {
+      opacity: 1;
+      visibility: visible;
+    }
+
+
+
+</style>
+<body>
+
+
+
+
+	<div class="Tab" style="background-color: rgb(249, 190, 54);" id="top">
+
+		<div class="dao1" align="center"><a href="#p1" style="text-decoration: none;"><h1>About Us</h1></a></div>
+		<div class="dao2" align="center"><a href="#p3" style="text-decoration: none;"><h1>Contact Us</h1></a></div>
+		<div class="dao3" align="center"><a href="#p2" style="text-decoration: none;"><a href="https://campus.new-thread.com/" style="text-decoration: none;" target="_blank"><h1>New Thead</h1></a></div>
+		<div class="dao4" align="center"><a href="#p4" style="text-decoration: none;"><h1>Q&A</h1></a></div>
+		<div class="dao5 tooltip" align="center">
+			<a href="#p4" style="text-decoration: none;"><a href="./images/qrcode_1699620268564.jpg" style="text-decoration: none;" target="_blank"><h1>Introduction</h1></a></a>
+			<span><img src="./images/qrcode_1699620268564.jpg" alt="" width="200px" height="200px"></span>
+		</div>
+
+	</div>
+
+	<div class="mainDiv2">
+		<div id="box1">
+			<div class="mainDiv6">
+				<img src="./images/decoration_Geek.png" alt="" width="100%" height="100%" class="imgA">
+			</div>
+		</div>
+		<div id="box2"><br><br><h1 align="center"><strong>Indroduction</strong></h1>
+		</div>
+	</div>
+
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div>
+        <div class="mainDiv_a imgB">
+
+            <div class="viceDiv_11">
+                <br><br>
+                <h1>开发程序猿</h1>
+                <h2 style="color: #7FFFD4;">“Stay Hungry，Stay Foolish”<br>
+                    前端：前端开发是创建Web或app视觉界面呈现给用户的过程通过HTML，CSS及JavaScript以及衍生出来的各种技术、框架、解决方案，实现互联网产品的用户界面交互。<br><br><br>
+                    后端：通常也称服务器端开发。不对用户显示,负责处理前端的请求，进行逻辑处理和数据交互。 客户端: 移动应用开发是为了小型、无线计算设备编写软件的流程和程序的集合，例如智能手机或平板电脑。</h2>
+                <br><br><br><br>
+            </div>
+
+            <div class="viceDiv_21">
+                <img src="./images/Geek_Programmer.png" alt="" height="450px">
+            </div>
+
+        </div>
+    </div>
+
+    <div>
+        <div class="mainDiv imgB">
+
+            <div class="viceDiv_21">
+                <img src="./images/Geek_PM.png" alt="" height="450px">
+            </div>
+
+            <div class="viceDiv_11">
+                <br>
+                <h1>产品经理</h1><br>
+                <h2 style="color: #7a06ff;">                "好的软件的特征是,明明没用过，但总觉得用过似的。"</h2><br><br>
+                    <h2>是针对某一项或是某一类的产品进行规划和管理的人员。 PM需要拥有缜密的产品逻辑思维，研究用户心理，负责产品的整个生命周期。 PM参与产品的UI和交互设计，为设计和开发确定产品原型，能够将产品变得有个性,操作变得舒适简单、自由。 PM需要一定的文档能力和沟通能力，能够在团队合作的过程中跟各个角色进行有效沟通。</h2>
+             <br><br><br><br>
+            </div>
+
+        </div>
+    </div>
+
+    <div>
+        <div class="mainDiv imgB">
+            <div class="viceDiv_11">
+                <br>
+                <h1>游戏开发</h1><br>
+                <h2 style="color: pink;">                "TECH OTAKUS SAVE THE WORLD"</h2><br>
+                    <h2>对游戏开发的热爱和追求，使我们相聚于此。 涉及计算机图形学的学习，我们使用物理模拟引擎Unity开发我们所追求的世界，一个故事，一个角色，在我们的世界里改变现实，创造新的可能，我们参与，我们改变，我们创造...</h2>
+                <br><br><br><br>
+            </div>
+            <div class="viceDiv_21">
+                <img src="./images/Geek_Game.png" alt="" height="450px">
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="mainDiv imgB">
+            <div class="viceDiv_21">
+                <img src="./images/Geek_security.png" alt="" height="450px">
+            </div>
+            <div class="viceDiv_11">
+                <br>
+                <h1>安全</h1><br>
+                <h2 style="color: coral;">                "路漫漫其修远兮，非大毅力者不能"</h2><br>
+                    <h2>我们主要学习Web安全和二进制安全。在Web安全中我们将学习和实践Web漏洞挖掘技术，也将探索和讨论Web安全实践的方法。在二进制安全中我们专注于分析和防御与计算机程序、系统相关的威胁，同时实践漏洞分析和修补。耐心和钻研缺一不可。</h2>
+                <br><br><br><br>
+            </div>
+        </div>
+    </div>
+
+
+
+	<div class="A">
+		<div class="B">
+
+			<div class="C1">
+				<div class="D1">
+					<img src="./images/decoration_Decoration.png" alt="" class="img1 mirrorRotateLevel">
+				</div>
+				<div class="D2"></div>
+				<div class="D3">
+					<img src="./images/decoration_Decoration.png" alt="" class="img1 mirrorRotateVertical">
+				</div>
+			</div>
+
+			<div class="C2">
+				<div></div>
+				<div>
+
+					<div class="D1">
+						<div></div>
+						<div></div>
+					</div>
+
+					<div >
+						<div class="D21">
+
+							<div class="V4">
+
+								<div class="V2" id="p1">
+									<h1 align="center" class="word">About Us</h1> <!-- 这里要调一下字的大小 -->
+								</div>
+				
+								<div class="V3">
+									<img src="./images/屏幕截图 2023-12-07 164704.png" alt="" width="100%" height="100%"> <!-- 这里插入一个图片 -->
+								</div>
+
+							</div>
+
+							<div class="E1 imgB">
+								<div class="F1">
+									<img src="./images/about_Speech.png" alt="" width="100%" height="100%">
+								</div>
+								<div class="F2">
+									<br>
+									<h2>每周我们会举行一次技术例会，用来汇报我们的学习内容，供成员之间交流学习。</h2>
+								</div>
+							</div>
+
+							<div class="E2 imgB">
+								<div class="F1">
+									<img src="./images/about_Diversity.png" alt="" width="100%" height="100%">
+								</div>
+								<div class="F21">
+									<br>
+									<h2>多元化是我们的特色。在这里，你可以拥有多种方向选择，前后端、安全、AI、产品/设计、游戏等。</h3>
+								</div>
+							</div>
+
+							<div class="E3 imgB">
+								<div class="F1">
+									<img src="./images/about_Time.png" alt="" width="100%" height="100%">
+								</div>
+								<div class="F2">
+									<br>
+									<h2>耐心、毅力是我们必备的品质，每周我们会至少花30小时在实验室中。以保证技术的精进。</h4>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="D3">
+						<div></div>
+						<div></div>
+					</div>
+
+				</div>
+				<div></div>
+			</div>
+
+			<div class="C3">
+				<div class="D1">
+					<img src="./images/decoration_Decoration.png" alt="" class="img1 mirrorRotateLevel ">
+				</div>
+				<div class="D2"></div>
+				<div class="D3">
+					<img src="./images/decoration_Decoration.png" alt="" class="img1 mirrorRotateVertical mirrorRotateLevel">
+				</div>
+			</div>
+
+		</div>
+	</div>
+	
+	<br><br><br><br><br>
+
+    <div class="I">
+        <div class="II">
+
+            <div class="III">
+                <img src="./images/decoration_TreeWithSometing.png" alt="" width="100%" height="100%">
+            </div>
+
+            <div class="IV">
+                <img src="./images/decoration_Tree.png" alt="" width="100%" height="100%">
+            </div>
+
+            <div class="V">
+
+                <div class="V1">
+                    <img src="./images/decoration_Leaves.png" alt="" width="100%" height="100%">
+                </div>
+
+                <div class="V2" id="p3">
+                    <h1 class="word">Contact Us</h1> <!-- 这里要调一下字的大小 -->
+                </div>
+
+                <div class="V3">
+                    <img src="./images/屏幕截图 2023-12-07 164714.png" alt="" width="100%" height="100%"> <!-- 这里插入一个电话图片 -->
+                </div>
+
+            </div>
+
+            <div class="VI">
+                <img src="./images/decoration_Chameleon.png" alt="" width="100%" height="100%">
+            </div>
+
+            <div class="VII">
+                <img src="./images/decoration_Ladybug.png" alt="" width="100%" height="100%">
+            </div>
+
+            <div class="VIII">
+                <ul>
+                    <li>
+                        <h1>热爱计算机，具有geek精神，喜欢DIY，动手能力较强</h1>
+                    </li>
+                    <li>
+                        <h1>有编程/算法/硬件基础为佳(有作品可附上)</h1>
+                    </li>
+                    <li>
+                        <h1>有足够的空余时间，热爱思考，对事物有自己的见解</h1>
+                    </li>
+                    <br><br>
+                    <p>
+                        <h2>ps:非新思路统招只有通过发送邮件自我介绍后，收到邮件回执后才会被允许进群,在读学生, 都可邮件到newthread_geek@outlook.com报名加入.(信中需备注个人基本信息以及意向方向,此招新活动为长期招新)</h3>
+                    </p>
+                </ul>
+            </div>
+
+            <div class="IX">
+
+				<div class="buttombox1">
+					<button style="width: 100%; height: 100%; border-radius: 30px; color: rgb(249, 249, 249); background-color: #4CAF50;"><a href="./images/qrcode_1699620268564.jpg" style="text-decoration: none;" target="_blank"><h1>QQ-Group</h1></a></button>
+				</div>
+
+				<div class="buttombox2">
+					<button style="width: 100%; height: 100%; border-radius: 30px; color: rgb(255, 255, 255); background-color: #4CAF50;"><h1>E-mail</h1></button>
+				</div>
+
+				<div class="buttombox3">
+					<button style="width: 100%; height: 100%; border-radius: 30px; color: rgb(255, 255, 255); background-color: #4CAF50;"><a href="https://www.bilibili.com/video/BV1j4411W7F7/?spm_id_from=333.788.recommend_more_video.0&vd_source=9d532181728e335a38b388f0d463ae30" style="text-decoration: none;" target="_blank"><h1>Github</h1></a></button>
+				</div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+  <div class="N1">
+    <div class="N2 img">
+
+        <div class="M1" id="p4">
+            <h1 class="word">More Questions</h1>
+        </div>
+
+        <div class="M2">
+            <img src="./images/屏幕截图 2023-12-07 180030.png" alt="" width="100%" height="110%" style="background-color: darkcyan;">
+        </div>
+
+        <div class="M3">
+            <div class="container1">
+                <div class="element1"><h1>1.什么是Geek(极客)？Geek精神又是什么？</h1></div>
+                <div class="target1"><h3>拥有好奇之心，改变之力，爱钻研，能折腾。</h3></div>
+              </div>
+              <br><br><br>
+            
+              <div class="container2">
+                <div class="element2"><h1>2.招新是安排在什么时间？</h1></div>
+                <div class="target2"><h3>按照惯例，正式招新时间是在9月下旬~10月上旬，不过今年会有一些改动，笔试地 点一般在9号教学楼。 如果想要了解我们，可以加入我们的QQ群，招新具体的安排/变动会在招新群通知。
+                </h3></div>
+              </div>
+              <br><br><br><br>
+            
+              <div class="container3">
+                <div class="element3"><h1>3.我们有考核吗？考核流程是怎样的呀？</h1></div>
+                <div class="target3"><h3>嗯...我们一共有一轮笔试和两轮面试。权衡技术、经验和学习能力，第一轮是一些视野性的题目，淘汰率并不高。第二轮单独面试， 根据你的笔试提出技术相关的问题、兴趣爱好、个人看法。最后一轮群面，首先问及时间分 配上的问题，其次也会向你提出各种奇怪的问题。这一轮中许多题目其实并不难，也无标准答案，重在考察同学们在压力下的逻辑思维。全部通过成为预备成员啦。</h3></div>
+              </div>
+              <br><br><br><br><br><br><br>
+            
+              <div class="container4">
+                <div class="element4"><h1>4.考核是怎样的形式？</h1></div>
+                <div class="target4"><h3>在考核期间每人会拥有一位'长者'带你入门，学习技术与知识，交流经验与想法。完成每周的新人任务后再进行一次考核筛选 后就可以成为Geek组正式成员啦！在考核期必须满足每周30个小时在实验室哦,所以考核期也不可以懈怠哦！
+                </h3></div>
+              </div>
+              <br><br><br><br>
+            
+              <div class="container5">
+                <div class="element5"><h1>5.进入Geek组之后都有什么福利呢？
+                </h1></div>
+                <div class="target5"><h3>一对一的新人指引，每一个成员都有会一个mentor, 带你初入门槛，与你一同成长，组内管理较宽松,在尊重其他人的前提下可以尽情发挥自己的个性。 打破平淡，与同样疯狂的人把疯狂的idea实现，磨砺耐性、培养思维、成就梦想。Lab设备/网络资源充足，闲暇之余也有组织活动。更有许多的故事等你来听~</h3></div>
+              </div>
+              <br><br><br><br><br><br>
+            
+              <div class="container6">
+                <div class="element6"><h1>6.进入团队会影响我的日常学习吗？</h1></div>
+                <div class="target6"><h3>你要知道大学是一个可以自由安排自己学习生活的地方。如果你想在上课之余充实自己、激励自己，最好的方法就是和比自己更优秀的人在一起。团队不缺优秀的 人，而我们也期待同样优秀的你，让我们一起前进！小组里也有不少保研, 考研的前辈们, 大部分都能找到一个平衡点, 而且团队的经历对你日后读研, 工作都大有裨益。</h3></div>
+              </div>
+              <br><br><br><br><br><br>
+            
+              <div class="container7">
+                <div class="element7"><h1>7.老师以及学长学姐们的期望是什么?</h1></div>
+                <div class="target7"><h3 style="color: #333;">我们希望你有很强的自学能力，同时关注新事物、新技术，喜欢挑战，逻辑性强，善于和各种文化的人合作.“每个人都可以做自己想做的事情，每个人的方向不一样。 如果你想做产品或有不错的 idea，那么就可以找志同道合的人一起合作。”</h3></div>
+              </div>
+			  <br><br><br><br>
+        </div>
+    </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+	<div class="footer">
+		<hr>
+		<br><br><br>
+		<p>
+			不知道写什么........
+		</p>
+		<br><br><br>
+	</div>
+
+
+
+</body>
+</html>
